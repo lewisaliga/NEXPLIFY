@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design & Development</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: linear-gradient(to top, #05123b, #048cb5, #062ca8);
+        }
+
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+        }
+
+        .section-content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .section ul {
+            text-align: left;
+            list-style-type: disc;
+            margin: 20px auto;
+        }
+
+        #ux-design {
+            background-image: url('images/www-1271864_1920.png'); /* Replace with your image path */
+        }
+
+        #ui-design {
+            background-image: url('images/wordpress-581849.jpg'); /* Replace with your image path */
+        }
+
+        #visual-design {
+            background-image: url('images/social-6109174.jpg'); /* Replace with your image path */
+        }
+
+        #front-end {
+            background-image: url('images/business-7100794.jpg'); /* Replace with your image path */
+        }
+
+        #back-end {
+            background-image: url('images/business-7100794\ \(1\).jpg'); /* Replace with your image path */
+        }
+
+        #cms-integration {
+            background-image: url('cms-integration.jpg'); /* Replace with your image path */
+        }
+
+        #testing-deployment {
+            background-image: url('images/icon-7124822_1920.jpg'); /* Replace with your image path */
+        }
+        
+        .navbar {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #05123b;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 13px;
+  display: block;
+}
+
+.navbar ul li a:hover {
+  background-color: #062ca8;
+  border-radius: 4px;
+  color: #fff;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <nav class="navbar">
+            <ul>
+              <li><a href="NEXPLIFY.html">Home</a></li>
+            </ul>
+          </nav>
+    </section>
+
+    <section id="ux-design" class="section">
+        <div class="section-content">
+            <h2>User Experience (UX) Design</h2>
+            <ul>
+                <li>Conducting user research to understand target audience needs.</li>
+                <li>Creating user flows and sitemaps to define website structure.</li>
+                <li>Developing wireframes and prototypes to visualize layout and functionality.</li>
+                <li>Focusing on usability, accessibility, and overall user satisfaction.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="ui-design" class="section">
+        <div class="section-content">
+            <h2>User Interface (UI) Design</h2>
+            <ul>
+                <li>Creating the visual look and feel of the website.</li>
+                <li>Designing page layouts, choosing color palettes, and selecting typography.</li>
+                <li>Designing interactive elements, such as buttons and forms.</li>
+                <li>Ensuring visual consistency and brand alignment.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="visual-design" class="section">
+        <div class="section-content">
+            <h2>Visual Design</h2>
+            <ul>
+                <li>Creating and or selecting imagery, video, and other visual assets.</li>
+                <li>Ensuring that all visual elements are optimized for web use.</li>
+                <li>Maintaining a cohesive visual style throughout the website.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="front-end" class="section">
+        <div class="section-content">
+            <h2>Front-End Development</h2>
+            <ul>
+                <li>Translating design mockups into functional HTML, CSS, and JavaScript code.</li>
+                <li>Ensuring website responsiveness across different devices and browsers.</li>
+                <li>Implementing interactive elements and user interfaces.</li>
+                <li>Improving website performance for optimal load times.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="back-end" class="section">
+        <div class="section-content">
+            <h2>Back-End Development</h2>
+            <ul>
+                <li>Building the server-side logic and database infrastructure.</li>
+                <li>Implementing website functionality, such as user authentication and content management.</li>
+                <li>Ensuring website security and data integrity.</li>
+                <li>Connecting the website to outside API's.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="cms-integration" class="section">
+        <div class="section-content">
+            <h2>Content Management System (CMS) Integration</h2>
+            <ul>
+                <li>Selecting and configuring a CMS, such as WordPress, Drupal, or Joomla.</li>
+                <li>Developing custom CMS themes and plugins.</li>
+                <li>Enabling content creators to easily manage and update website content.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="testing-deployment" class="section">
+        <div class="section-content">
+            <h2>Testing and Deployment</h2>
+            <ul>
+                <li>Conducting thorough testing to identify and fix bugs.</li>
+                <li>Optimizing website performance and security.</li>
+                <li>Deploying the website to a web server.</li>
+                <li>Post deployment testing, and maintenance.</li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>

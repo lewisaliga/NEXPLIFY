@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXPLIFY - Social Media & Digital Marketing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.jpg" alt="NEXPLIFY Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to NEXPLIFY</h1><br>
+        <p>Boost your brand with expert social media management and digital marketing solutions.</p><br>
+        <a href="#services" class="cta-button">Explore Our Services</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <h3>SEO</h3>
+                <p>Optimize your website to rank higher on search engines with our technical expertise.</p>
+                <a href="seo-page.html">Read More...</a>
+            </div>
+            <div class="service-box">
+                <h3>Content Creation & Marketing</h3>
+                <p>Craft compelling stories that resonate and drive engagement.</p>
+                <a href="content-page.html">Read More...</a>
+            </div>
+            <div class="service-box">
+                <h3>Website Design & Develepment</h3>
+                <p>High-quality visuals and copy tailored to your brand’s voice.</p>
+                <a href="webDev-page.html">Read More...</a>
+            </div>
+            <div class="service-box">
+                <h3>Pay Per Click</h3>
+                <p>Maximize ROI with targeted ad campaigns across platforms.</p>
+                <a href="ppc-page.html">Read More...</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Why Choose NEXPLIFY?</h2>
+        <div class="about-content">
+            <div class="about-item">
+                <h3>High Engagement</h3>
+                <p>We drive meaningful interactions to grow your audience and build trust.</p>
+            </div>
+            <div class="about-item">
+                <h3>Data Security</h3>
+                <p>Your data is our priority—protected with top-tier security measures.</p>
+            </div>
+            <div class="about-item">
+                <h3>Expert Team</h3>
+                <p>Our specialists ensure your social media success across all devices.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-details">
+            <h2>Contact Us</h2>
+            <p>Ready to elevate your social media presence? Get in touch today!</p>
+            <form>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="button" class="cta-button" onclick="sendEmail()">Send Message</button>
+            </form>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/nexplify?igsh=aGNsaDl6MHBnaml6" target="_blank" class="icon facebook">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="hhttps://x.com/nexplify?t=LL7n-nXrehRkJAiaYgafgw&s=09" target="_blank" class="icon twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/nexplify?igsh=aGNsaDl6MHBnaml6" target="_blank" class="icon instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aidan-aligawesa-aa4484294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon linkedin">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+        </div>
+    </section>
+    <!-- <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script> -->
+    
+    <script>
+        function sendEmail() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            var subject = "New Contact Form Submission from " + name;
+            var body = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
+    
+            // Replace 'your-email@example.com' with your actual email address
+            window.location.href = "nexplify@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        }
+    </script>
+    <footer>
+        <p>&copy; 2025 NEXPLIFY. All rights reserved.</p>
+    </footer>
+</body>
+</html>
